@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		7B789549239E2A000033E256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B789547239E2A000033E256 /* Main.storyboard */; };
 		7B78954B239E2A050033E256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B78954A239E2A050033E256 /* Assets.xcassets */; };
 		7B78954E239E2A050033E256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B78954C239E2A050033E256 /* LaunchScreen.storyboard */; };
+		7B789556239E2C9B0033E256 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B789555239E2C9B0033E256 /* GoogleService-Info.plist */; };
+		DE771E719E3B2CE5445FF7A5 /* Pods_NexSeedChatProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FB5CD59BBA7ED74C6A76E1 /* Pods_NexSeedChatProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DE6F2698F6AEB06E5DE35A8 /* Pods-NexSeedChatProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexSeedChatProject.release.xcconfig"; path = "Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject.release.xcconfig"; sourceTree = "<group>"; };
 		7B78953E239E2A000033E256 /* NexSeedChatProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexSeedChatProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B789541239E2A000033E256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B789543239E2A000033E256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		7B78954A239E2A050033E256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B78954D239E2A050033E256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B78954F239E2A050033E256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B789555239E2C9B0033E256 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6FB5CD59BBA7ED74C6A76E1 /* Pods_NexSeedChatProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexSeedChatProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEFCAF942C3F7BB799D4F4D /* Pods-NexSeedChatProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexSeedChatProject.debug.xcconfig"; path = "Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE771E719E3B2CE5445FF7A5 /* Pods_NexSeedChatProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5890A86DAFE42B67DA5F41AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAEFCAF942C3F7BB799D4F4D /* Pods-NexSeedChatProject.debug.xcconfig */,
+				5DE6F2698F6AEB06E5DE35A8 /* Pods-NexSeedChatProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		624F5C024061661E670938DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6FB5CD59BBA7ED74C6A76E1 /* Pods_NexSeedChatProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B789535239E2A000033E256 = {
 			isa = PBXGroup;
 			children = (
 				7B789540239E2A000033E256 /* NexSeedChatProject */,
 				7B78953F239E2A000033E256 /* Products */,
+				5890A86DAFE42B67DA5F41AB /* Pods */,
+				624F5C024061661E670938DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				7B78954A239E2A050033E256 /* Assets.xcassets */,
 				7B78954C239E2A050033E256 /* LaunchScreen.storyboard */,
 				7B78954F239E2A050033E256 /* Info.plist */,
+				7B789555239E2C9B0033E256 /* GoogleService-Info.plist */,
 			);
 			path = NexSeedChatProject;
 			sourceTree = "<group>";
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B789552239E2A050033E256 /* Build configuration list for PBXNativeTarget "NexSeedChatProject" */;
 			buildPhases = (
+				3625CA3052FCED3EEDB920BE /* [CP] Check Pods Manifest.lock */,
 				7B78953A239E2A000033E256 /* Sources */,
 				7B78953B239E2A000033E256 /* Frameworks */,
 				7B78953C239E2A000033E256 /* Resources */,
+				A44CB6AFDE69EF3AF52D6BDE /* [CP] Embed Pods Frameworks */,
+				B77606BD2E81A011E99ECFBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,11 +157,71 @@
 			files = (
 				7B78954E239E2A050033E256 /* LaunchScreen.storyboard in Resources */,
 				7B78954B239E2A050033E256 /* Assets.xcassets in Resources */,
+				7B789556239E2C9B0033E256 /* GoogleService-Info.plist in Resources */,
 				7B789549239E2A000033E256 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3625CA3052FCED3EEDB920BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NexSeedChatProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A44CB6AFDE69EF3AF52D6BDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77606BD2E81A011E99ECFBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B78953A239E2A000033E256 /* Sources */ = {
@@ -282,6 +372,7 @@
 		};
 		7B789553239E2A050033E256 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAEFCAF942C3F7BB799D4F4D /* Pods-NexSeedChatProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +390,7 @@
 		};
 		7B789554239E2A050033E256 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE6F2698F6AEB06E5DE35A8 /* Pods-NexSeedChatProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
