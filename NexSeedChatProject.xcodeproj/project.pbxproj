@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		7B789542239E2A000033E256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B789541239E2A000033E256 /* AppDelegate.swift */; };
 		7B789544239E2A000033E256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B789543239E2A000033E256 /* SceneDelegate.swift */; };
-		7B789546239E2A000033E256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B789545239E2A000033E256 /* ViewController.swift */; };
 		7B789549239E2A000033E256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B789547239E2A000033E256 /* Main.storyboard */; };
 		7B78954B239E2A050033E256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B78954A239E2A050033E256 /* Assets.xcassets */; };
 		7B78954E239E2A050033E256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B78954C239E2A050033E256 /* LaunchScreen.storyboard */; };
 		7B789556239E2C9B0033E256 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B789555239E2C9B0033E256 /* GoogleService-Info.plist */; };
+		7BB36025239F66CD00C65D34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB36024239F66CD00C65D34 /* LoginViewController.swift */; };
+		7BB36027239F745300C65D34 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB36026239F745300C65D34 /* RoomViewController.swift */; };
+		7BB3602A239F7B1000C65D34 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB36029239F7B1000C65D34 /* Room.swift */; };
 		DE771E719E3B2CE5445FF7A5 /* Pods_NexSeedChatProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FB5CD59BBA7ED74C6A76E1 /* Pods_NexSeedChatProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +24,14 @@
 		7B78953E239E2A000033E256 /* NexSeedChatProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexSeedChatProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B789541239E2A000033E256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B789543239E2A000033E256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B789545239E2A000033E256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B789548239E2A000033E256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B78954A239E2A050033E256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B78954D239E2A050033E256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B78954F239E2A050033E256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B789555239E2C9B0033E256 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7BB36024239F66CD00C65D34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7BB36026239F745300C65D34 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		7BB36029239F7B1000C65D34 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		B6FB5CD59BBA7ED74C6A76E1 /* Pods_NexSeedChatProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexSeedChatProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEFCAF942C3F7BB799D4F4D /* Pods-NexSeedChatProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexSeedChatProject.debug.xcconfig"; path = "Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +86,10 @@
 		7B789540239E2A000033E256 /* NexSeedChatProject */ = {
 			isa = PBXGroup;
 			children = (
+				7BB36028239F7AFB00C65D34 /* Objects */,
+				7B789558239E31D50033E256 /* Controllers */,
 				7B789541239E2A000033E256 /* AppDelegate.swift */,
 				7B789543239E2A000033E256 /* SceneDelegate.swift */,
-				7B789545239E2A000033E256 /* ViewController.swift */,
 				7B789547239E2A000033E256 /* Main.storyboard */,
 				7B78954A239E2A050033E256 /* Assets.xcassets */,
 				7B78954C239E2A050033E256 /* LaunchScreen.storyboard */,
@@ -92,6 +97,23 @@
 				7B789555239E2C9B0033E256 /* GoogleService-Info.plist */,
 			);
 			path = NexSeedChatProject;
+			sourceTree = "<group>";
+		};
+		7B789558239E31D50033E256 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BB36024239F66CD00C65D34 /* LoginViewController.swift */,
+				7BB36026239F745300C65D34 /* RoomViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7BB36028239F7AFB00C65D34 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7BB36029239F7B1000C65D34 /* Room.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B789546239E2A000033E256 /* ViewController.swift in Sources */,
+				7BB36025239F66CD00C65D34 /* LoginViewController.swift in Sources */,
 				7B789542239E2A000033E256 /* AppDelegate.swift in Sources */,
 				7B789544239E2A000033E256 /* SceneDelegate.swift in Sources */,
+				7BB36027239F745300C65D34 /* RoomViewController.swift in Sources */,
+				7BB3602A239F7B1000C65D34 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKH29S9QB6;
 				INFOPLIST_FILE = NexSeedChatProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKH29S9QB6;
 				INFOPLIST_FILE = NexSeedChatProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
