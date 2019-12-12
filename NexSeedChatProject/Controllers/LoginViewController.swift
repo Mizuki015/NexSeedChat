@@ -19,21 +19,22 @@ class LoginViewController: UIViewController {
         GIDSignIn.sharedInstance()?.delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self
         
-//        // スプラッシュ画面の作成
-//        let splashView = RevealingSplashView(
-//            iconImage: UIImage(named: "seedkun")!,
-//            iconInitialSize: CGSize(width: 250, height: 250),
-//            backgroundColor: UIColor(red: 79/255, green: 171/255, blue: 255/255, alpha: 1)
-//        )
-//        
-//        // スプラッシュのアニメーション設定
-//        splashView.animationType = .swingAndZoomOut
-//        // 画面に表示
-//        self.view.addSubview(splashView)
-//        // アニメーション開始
-//        splashView.startAnimation{
-//            // アニメーション終了時の処理
-//        }
+        // スプラッシュ画面の作成
+        let splashView = RevealingSplashView(
+            iconImage: UIImage(named: "seedkun")!,
+            iconInitialSize: CGSize(width: 250, height: 250),
+            backgroundColor: UIColor(red: 79/255, green: 171/255, blue: 255/255, alpha: 1)
+        )
+        
+        // スプラッシュのアニメーション設定
+        splashView.animationType = .swingAndZoomOut
+        // 画面に表示
+        self.view.addSubview(splashView)
+        // アニメーション開始
+        splashView.startAnimation{
+            // アニメーション終了時の処理
+            didDisplaySplashFlag = true
+        }
         
     }
     

@@ -29,7 +29,14 @@ class RoomViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        showSplashView()
+        // スプラッシュを表示するか判断する
+        if didDisplaySplashFlag == false {
+            
+            // まだスプラッシュを表示していなかったら
+            showSplashView()
+            
+            didDisplaySplashFlag = true
+        }
         
         // FireStoreに接続
         let db = Firestore.firestore()
@@ -134,6 +141,26 @@ extension RoomViewController: UITableViewDelegate, UITableViewDataSource {
         
         // セルを返す
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 今回クリックされた部屋情報を取得
+        let room = rooms[indexPath.row]
+       
+        // セルの選択状態(グレー色になるやつ)を解除
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // チャット画面に遷移
+        performSegue(withIdentifier: "toRoom", sender: room.documentId)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toRoom" {
+            let ChatVC = segue.destination as! ChatViewController
+            ChatVC.documentId = sender as! String
+        }
     }
     
 }

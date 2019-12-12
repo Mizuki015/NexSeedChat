@@ -10,6 +10,10 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
+// スプラッシュを表示するかどうかを判断するフラグ
+// true: 表示した, false: 表示してない
+var didDisplaySplashFlag = false
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

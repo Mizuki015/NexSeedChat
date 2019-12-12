@@ -19,6 +19,7 @@
 		7BB3602C23A0BA6300C65D34 /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3602B23A0BA6300C65D34 /* ChatUser.swift */; };
 		7BB3602E23A0BA7200C65D34 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3602D23A0BA7200C65D34 /* Message.swift */; };
 		7BB3603023A0BA9800C65D34 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3602F23A0BA9800C65D34 /* ChatViewController.swift */; };
+		7BB3603223A2137B00C65D34 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3603123A2137B00C65D34 /* SettingViewController.swift */; };
 		DE771E719E3B2CE5445FF7A5 /* Pods_NexSeedChatProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FB5CD59BBA7ED74C6A76E1 /* Pods_NexSeedChatProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		7BB3602B23A0BA6300C65D34 /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
 		7BB3602D23A0BA7200C65D34 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7BB3602F23A0BA9800C65D34 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		7BB3603123A2137B00C65D34 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B6FB5CD59BBA7ED74C6A76E1 /* Pods_NexSeedChatProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexSeedChatProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEFCAF942C3F7BB799D4F4D /* Pods-NexSeedChatProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexSeedChatProject.debug.xcconfig"; path = "Target Support Files/Pods-NexSeedChatProject/Pods-NexSeedChatProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				7BB36024239F66CD00C65D34 /* LoginViewController.swift */,
 				7BB36026239F745300C65D34 /* RoomViewController.swift */,
 				7BB3602F23A0BA9800C65D34 /* ChatViewController.swift */,
+				7BB3603123A2137B00C65D34 /* SettingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				7BB3603023A0BA9800C65D34 /* ChatViewController.swift in Sources */,
 				7B789542239E2A000033E256 /* AppDelegate.swift in Sources */,
 				7B789544239E2A000033E256 /* SceneDelegate.swift in Sources */,
+				7BB3603223A2137B00C65D34 /* SettingViewController.swift in Sources */,
 				7BB36027239F745300C65D34 /* RoomViewController.swift in Sources */,
 				7BB3602A239F7B1000C65D34 /* Room.swift in Sources */,
 				7BB3602E23A0BA7200C65D34 /* Message.swift in Sources */,
